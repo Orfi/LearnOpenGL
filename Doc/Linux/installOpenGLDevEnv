@@ -1,0 +1,118 @@
+#!/bin/bash
+# you can also use the software centre
+sudo apt-get update
+sudo apt-get upgrade
+echo "**********************"
+echo "**********************"
+echo "press enter to continue"
+read ANSWER
+echo " "
+echo "**********************"
+echo "installing dev tools ..."
+echo "**********************"
+sudo apt-get install g++
+sudo apt-get install xorg-dev libglu1-mesa-dev libxinerama-dev libxcursor-dev libxi-dev
+echo "**********************"
+echo "**********************"
+echo "press enter to continue"
+read ANSWER
+echo " "
+echo "**********************"
+echo "installing cmake ..."
+echo "**********************"
+sudo apt-get install cmake
+echo "**********************"
+echo "**********************"
+echo "press enter to continue"
+read ANSWER
+echo " "
+echo "**********************"
+echo "installing Git ..."
+echo "**********************"
+sudo apt-get install git
+echo "**********************"
+echo "**********************"
+echo "press enter to continue"
+read ANSWER
+echo " "
+echo "**********************"
+echo "installing GLEW ..."
+echo "**********************"
+sudo apt-get install libglew-dev
+echo "**********************"
+echo "**********************"
+echo "press enter to continue"
+read ANSWER
+echo " "
+echo "**********************"
+echo "installing GLFW ..."
+echo "**********************"
+sudo apt-get install libglfw3-dev libglfw3
+echo "**********************"
+echo "**********************"
+echo "press enter to continue"
+read ANSWER
+echo " "
+echo "**********************"
+echo "installing glm ..."
+echo "**********************"
+sudo apt-get install libglm-dev
+echo "**********************"
+echo "**********************"
+echo "press enter to continue"
+read ANSWER
+echo " "
+echo "**********************"
+echo "installing soil ..."
+echo "**********************"
+sudo apt-get install libsoil-dev
+echo "**********************"
+echo "**********************"
+echo "press enter to continue"
+read ANSWER
+echo " "
+echo "**********************"
+echo "installing BULLET ..."
+echo "**********************"
+sudo apt-get install libbullet-dev
+sudo apt-get install libbullet-extras-dev
+sudo apt-get install libbullet-doc
+echo "**********************"
+echo "**********************"
+echo "press enter to continue"
+read ANSWER
+echo " "
+echo "**********************"
+echo "installing ASSIMP ..."
+echo "**********************"
+sudo apt-get install assimp-utils
+sudo apt-get install libassimp-dev
+echo "**********************"
+echo "**********************"
+echo "press enter to continue"
+read ANSWER
+echo " "
+echo "**********************"
+echo "installing glut ..."
+echo "**********************"
+sudo apt-get install freeglut3 freeglut3-dev
+sudo apt-get install binutils-gold
+echo "**********************"
+echo "**********************"
+echo "press enter to continue"
+read ANSWER
+echo " "
+echo "**********************"
+echo "installing mesa utils ..."
+echo "**********************"
+sudo apt install mesa-utils
+echo "**********************"
+echo "**********************"
+echo "press enter to continue"
+read ANSWER
+echo " "
+echo "**********************"
+echo "OpenGL version ..."
+echo "**********************"
+glxinfo | grep "OpenGL version"
+glxgears

@@ -1,0 +1,11 @@
+Until someone who can write a proper CMake script comes along, the following is what I did to get the tutorials to compile on Linux.
+
+Change any #include statements with local files to use " around the file location instead of <>. Example: #include <learnopengl shader.h=""> should be changed into #include "learnopengl/shader.h"
+
+Create a new file in the directory of the tutorial you want to compile called "Makefile". This should be the same directory as the main.cpp you want to compile. Put the following snippet from Pastebin into the Makefile: http://pastebin.com/2Vqhwd2d . 
+all:
+	g++ -std=c++11   playground.cpp   -lglfw  -lGL  -lGLEW -I /usr/include/SOIL -lSOIL
+	
+Rename "playground.cpp" in the Makefile to the name of the tutorial you're compiling. If the tutorial depends on additional .cpp files write them in front of playground.cpp (As far as I can tell, none of the tutorials on this site will need this last step).
+
+Open up a terminal window to the directory of the Makefile you just created and run the command 'make'.
