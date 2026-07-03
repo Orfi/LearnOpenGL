@@ -1,0 +1,19 @@
+TEMPLATE = app
+CONFIG += console c++11
+CONFIG -= app_bundle
+CONFIG -= qt
+
+SOURCES += main.cpp \
+    glad.c
+
+INCLUDEPATH += .\
+INCLUDEPATH += $$PWD/../../OpenGLDepMinGW/include
+LIBS += -lGLFW3 -lopengl32 -lglu32 -luser32 -lgdi32\
+
+DISTFILES += \
+    4.5.texture.fs \
+    4.5.texture.vs
+
+HEADERS += \
+    shader_s.h \
+    camera.h
